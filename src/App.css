@@ -55,3 +55,8 @@
   justify-content: center;
   font-size: 3rem;
 }
+
+.container{
+  width: 1140px;
+  margin: 0 auto;
+}
