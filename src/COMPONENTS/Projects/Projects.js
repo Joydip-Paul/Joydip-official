@@ -8,7 +8,7 @@ const Projects = () => {
         color: "white",
     }
     return (
-        <div className="" style = {st}>
+        <div className="" style={st}>
             <h1>This is Project Page</h1>
         </div>
     );
