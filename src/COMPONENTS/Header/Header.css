@@ -1,0 +1,144 @@
+body{
+    background-color: var(--theme-color-2);
+}
+
+:root {
+  /* --bg: #082032;
+  --white: #ffffff;
+  --theme-color-1: #2C394B;
+  --theme-color-2: #FF4C29; */
+
+  --white: #ffffff;
+  --theme-color-1: #DA0037;
+  --theme-color-2: #171717;
+  --theme-color-3: #343436;
+}
+
+nav{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: var(--theme-color-2);
+}
+
+.logo a{
+    left: 2rem;
+    top: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+    display: none;
+}
+
+.navItems{
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+
+.navItems li{
+    display: inline-block;
+    border-radius: 8px;
+    transition: .3s ease background-color;
+    padding: 1rem 2rem;
+}
+
+.navItems li a:hover{
+    color: var(--theme-color-1);
+}
+
+.navItems li a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--white);
+    text-transform: uppercase;
+    outline: none;
+}
+
+.active{
+    color: #FF4C29;
+}
+
+.hamburger_menu{
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    width: 4rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--white);
+    display: none;
+    outline: none;
+}
+
+.close_menu{
+    display: none;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.hamburger_menu *{
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 758px){
+.navItems li:hover{
+    background-color: var(--theme-color-1);
+    cursor: pointer;
+}
+
+.logo a{
+    display: block;
+}
+
+.navItems li:hover a{
+    color: var(--white);
+}
+ .hamburger_menu{
+    display:block;
+ }
+.close_menu{
+    display: block;
+    width: 3rem;
+    margin: 0 0 0 auto;
+ }
+.navItems{
+    transition: 0.3 ease transform;
+    background-color: var(--theme-color-3);
+    box-shadow: #00000026 0px 15px 25px, #0000000d 0px 5px 10px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 12px;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+.navItems .close_menu{
+    display: block;
+    width: 3rem;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+}
+
+.navItems .close_menu *{
+    pointer-events: none;
+}
+
+.navItems li{
+    display: block;
+    margin-bottom: 1rem;
+}
+.hide-item{
+    transform: translateY(calc(-100% - 1rem));
+}
+}
