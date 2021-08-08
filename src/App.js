@@ -13,6 +13,7 @@ function App() {
     <div className="Joydip">
       <Router>
         <Header />
+        {/* <Navbar /> */}
         <Switch>
           <Route path="/about">
             <AboutMe />
@@ -20,7 +21,7 @@ function App() {
           <Route path="/projects">
             <Projects />
           </Route>
-           <Route path="/contact">
+          <Route path="/contact">
             <Contact />
           </Route>
           <Route path="/">

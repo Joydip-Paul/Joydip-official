@@ -13,10 +13,15 @@
   --theme-color-1: #2C394B;
   --theme-color-2: #FF4C29; */
 
-  --bg: #ffffff;
+  /* --bg: #ffffff;
   --white: #ffffff;
-  --theme-color-1: #DA0037;
-  --theme-color-2: #171717;
+  --theme-color-1: #DA0037; */
+
+  --white: #ffffff;
+  --theme-color-x: #171717;
+  --theme-black: #000000;
+  --theme-color-y: #BD1616;
+  /* --theme-color-y: #DA0037; */
 }
 
 /* .container{

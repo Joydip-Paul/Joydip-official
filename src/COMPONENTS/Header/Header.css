@@ -1,18 +1,13 @@
 body{
-    background-color: var(--theme-color-2);
+    /* background-color: var(--theme-color-2); */
 }
 
-:root {
-  /* --bg: #082032;
-  --white: #ffffff;
-  --theme-color-1: #2C394B;
-  --theme-color-2: #FF4C29; */
-
+/* :root {
   --white: #ffffff;
   --theme-color-1: #DA0037;
   --theme-color-2: #171717;
   --theme-color-3: #343436;
-}
+} */
 
 nav{
     position: fixed;
@@ -21,7 +16,7 @@ nav{
     left: 0;
     width: 100%;
     padding: 1rem 0;
-    background-color: var(--theme-color-2);
+    background-color: var(--theme-color-x);
 }
 
 .logo a{
@@ -50,8 +45,9 @@ nav{
 }
 
 .navItems li a:hover{
-    color: var(--theme-color-1);
+    color: var(--theme-color-y);
 }
+
 
 .navItems li a {
     display: inline-block;
@@ -90,8 +86,11 @@ nav{
 }
 
 @media only screen and (max-width: 758px){
+nav{
+    background-color: var(--theme-black);
+}
 .navItems li:hover{
-    background-color: var(--theme-color-1);
+    background-color: var(--theme-color-y);
     cursor: pointer;
 }
 
@@ -112,7 +111,7 @@ nav{
  }
 .navItems{
     transition: 0.3 ease transform;
-    background-color: var(--theme-color-3);
+    background-color: var(--theme-color-x);
     box-shadow: #00000026 0px 15px 25px, #0000000d 0px 5px 10px;
     padding: 2rem;
     width: 90%;
