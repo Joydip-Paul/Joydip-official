@@ -1,0 +1,10 @@
+.aboutMeArea{
+    padding: 100px 50px;
+    background-color: var(--theme-black);
+}
+
+.aboutMeArea h1{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 100px;
+}

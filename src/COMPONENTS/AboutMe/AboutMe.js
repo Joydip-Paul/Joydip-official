@@ -1,16 +1,11 @@
 import React from 'react';
+import './AboutMe.css';
 
 const AboutMe = () => {
-    const st = {
-        marginTop: "100px",
-        padding: "100px",
-        textAlign: "center",
-        color: "white",
-    }
     return (
-        <div className="" style = {st}>
+        <section className="aboutMeArea">
             <h1>This is About Page</h1>
-        </div>
+        </section>
     );
 };
 

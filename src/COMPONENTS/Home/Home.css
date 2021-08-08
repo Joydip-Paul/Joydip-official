@@ -1,3 +1,35 @@
+/* animation */
+/* .hero-content h1{
+  position: relative;
+  font-size: 5vw;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #1f1f1f;
+}
+
+.hero-content h1::before{
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: center;
+  width: 0%;
+  height: 100%;
+  color: #ffffff;
+    border-right: 1px solid var(--theme-color-y);
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+
+@keyframes animate{
+  0%,10%,100%{
+    width: 0;
+  }
+  70%,90%{
+    width: 40%;
+  }
+} */
+/* animation */
+
 .hero_img{
     background-color: var(--theme-color-2);
     padding: 20px;
@@ -13,31 +45,43 @@
 }
 
 .hero-content{
-    padding: 100px 50px;
+    padding: 110px 50px;
     height: 60%;
     width: 80%;
-    color: #fff;
 }
 
 .hero-content h1{
-  font-size: 60px;
-  font-weight: 700;
+  position: relative;
+  font-size: 5vw;
+  font-weight: 800;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
-.hero-content p{
-  font-size: 16px;
-  padding: 10px 120px;
-  color: #dbdbdbdb;
+.hero-content small{
+  position: relative;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.skill-icon{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  place-items: center;
+  grid-gap: 10px;
+  width: 600px;
+  margin: 0 auto;
+  color: var(--white);
 }
 
 .single-skill-icon{
   background-color: var(--theme-color-x);
-  margin: 0 10px;
+  margin: 10px;
   padding: 10px 15px;
   font-size: 25px;
   border: 2px solid var(--theme-color-x);
-  cursor: pointer;
   transition: .7s;
 }
 
@@ -95,4 +139,19 @@
 .theme-btn:hover:after {
   left: 0;
   transition: .7s ease-out;
+}
+
+@media only screen and (max-width: 768px){
+  .skill-icon{
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  width: 300px;
+}
+.hero-content h1{
+  font-size: 30px;
+}
+}
+
+@media only screen and (max-width: 1200px){
+
 }
