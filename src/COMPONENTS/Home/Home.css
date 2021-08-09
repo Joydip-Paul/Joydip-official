@@ -1,34 +1,4 @@
-/* animation */
-/* .hero-content h1{
-  position: relative;
-  font-size: 5vw;
-  font-weight: 800;
-  text-transform: uppercase;
-  color: #1f1f1f;
-}
-
-.hero-content h1::before{
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: center;
-  width: 0%;
-  height: 100%;
-  color: #ffffff;
-    border-right: 1px solid var(--theme-color-y);
-    overflow: hidden;
-    animation: animate 6s linear infinite;
-}
-
-@keyframes animate{
-  0%,10%,100%{
-    width: 0;
-  }
-  70%,90%{
-    width: 40%;
-  }
-} */
-/* animation */
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 .hero_img{
     background-color: var(--theme-color-2);
@@ -53,9 +23,9 @@
 .hero-content h1{
   position: relative;
   font-size: 5vw;
-  font-weight: 800;
   text-transform: uppercase;
   color: #ffffff;
+  font-family: 'Monoton', cursive;
 }
 
 .hero-content small{
@@ -71,23 +41,23 @@
   grid-template-columns: repeat(6,1fr);
   place-items: center;
   grid-gap: 10px;
-  width: 600px;
-  margin: 0 auto;
+  margin: 0 15rem;
   color: var(--white);
 }
 
 .single-skill-icon{
   background-color: var(--theme-color-x);
-  margin: 10px;
+  margin: 10px 0;
   padding: 10px 15px;
   font-size: 25px;
   border: 2px solid var(--theme-color-x);
   transition: .7s;
+  place-self: center stretch;
 }
 
 .single-skill-icon:hover{
   background: none;
-  border: 2px solid var(--theme-color-y);
+  border: 2px solid var(--white);
 }
 
 .theme-btn{
@@ -115,7 +85,8 @@
   width: 100%;
   height: 100%;
   content: "";
-  background: var(--theme-color-y);
+  /* background: var(--theme-color-y); */
+  background: #5a5a5a27;
   transition: .3s ease-in;
 }
 
@@ -141,17 +112,33 @@
   transition: .7s ease-out;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1200px){
   .skill-icon{
   grid-template-columns: repeat(3,1fr);
   grid-gap: 10px;
-  width: 300px;
+  margin: 0 10rem;
+   place-self: center;
+   justify-items: center;
+}
+.single-skill-icon{
+  place-self: center stretch;
+}
+}
+
+@media only screen and (max-width: 768px){
+  .skill-icon{
+  grid-template-columns: repeat(3,1fr);
+  margin: 0 5rem;
 }
 .hero-content h1{
   font-size: 30px;
 }
 }
 
-@media only screen and (max-width: 1200px){
-
+@media only screen and (max-width: 400px){
+  .skill-icon{
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+  margin: 0 2rem;
+}
 }
