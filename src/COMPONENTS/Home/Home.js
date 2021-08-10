@@ -9,7 +9,7 @@ const Home = () => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="hero-content text-center">
-                        <h1 className="hero-heading">
+                        <h1 className="hero-heading" contentEditable="true">
                             Joydip Paul
                         </h1>
                         <small>Web Developer</small>
@@ -33,7 +33,8 @@ const Home = () => {
                                 <AiFillSkype />
                             </div>
                         </div>
-                        <button className="theme-btn">Download CV</button>
+                        {/* <button className="theme-btn">Download CV</button> */}
+                        <button className="my-btn">Download CV</button>
                     </div>
                 </div>
             </div>

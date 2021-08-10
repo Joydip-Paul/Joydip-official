@@ -36,7 +36,7 @@ nav{
 }
 
 .navItems li a:hover{
-    color: #9c9c9c;
+    color: var(--white);
     transition: .9s;
 }
 
@@ -51,7 +51,7 @@ nav{
     transform-origin: 50% 50%;
     width: 60%;
     height: 1px;
-    background-color: #fff;
+    background-color: var(--theme-color-y);
     -webkit-transition: 250ms;
     transition: transform 250ms;
 }
@@ -102,6 +102,7 @@ nav{
 }
 .navItems li:hover{
     background-color: var(--white);
+    background-color: var(--theme-color-y);
     cursor: pointer;
 }
 
