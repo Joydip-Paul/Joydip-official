@@ -1,10 +1,48 @@
 .aboutMeArea{
-    padding: 100px 50px;
+    padding: 150px 0;
     background-color: var(--theme-black);
+    position: relative;
 }
 
-.aboutMeArea h1{
-    color: #ffffff;
+.about-content{
     text-align: center;
-    margin-top: 100px;
+}
+
+.about-content p{
+    text-align: justify;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+#second-btn{
+    background: none;
+    color: #fff;
+}
+
+#second-btn:hover{
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #000;
+}
+
+.me img{
+    position: relative;
+    width: 60%;
+    float: right;
+    filter: grayscale(100%);
+}
+
+.home-about{
+    background-color: var(--theme-black);
+    padding: 100px 0;
+}
+
+@media only screen and (max-width: 992px){
+    .me img{
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+}
 }

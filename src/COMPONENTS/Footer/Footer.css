@@ -1,0 +1,20 @@
+.footer-area{
+    background-color: var(--theme-color-x);
+    text-align: center;
+    padding: 100px 0 10px 0;
+    clip-path: polygon(49% 17%, 96% 35%, 100% 68%, 100% 100%, 68% 100%, 32% 100%, 0 100%, 0 67%, 4% 33%);
+    z-index: 100;
+}
+
+/* .footer-area  p{
+    display: inline;
+    background: none;
+} */
+
+.footer-area h2,p, a, .footer-contact{
+    background: none;
+}
+
+.footer-contact{
+    justify-content: center;
+}
