@@ -104,21 +104,6 @@
   border: 2px solid #53C2EE;
 } */
 
-.my-btn{
-  background-color: #ffffff;
-  padding: 10px 20px;
-  outline: none;
-  border: 2px solid #fff;
-  font-weight: 600;
-  transition: .7s;
-  margin: 10px 0;
-}
-
-.my-btn:hover{
-  background: none;
-  border: 2px solid var(--theme-color-y);
-  color: #fff;
-}
 
 /* .theme-btn{
   text-decoration: none;
