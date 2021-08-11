@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutMe.css';
 import Timeline from './Timeline';
 import Footer from './../Footer/Footer';
+import ContactNow from '../Contact/ContactNow';
 
 
 const AboutMe = () => {
@@ -35,6 +36,9 @@ const AboutMe = () => {
                     </div>
                 </div>
             </div>
+
+            <ContactNow />
+
             <Footer />
         </section >
     );

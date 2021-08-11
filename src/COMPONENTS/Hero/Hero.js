@@ -1,6 +1,7 @@
 import React from 'react';
 import './Hero.css';
 import { AiFillGithub, AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare, AiFillSkype } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -14,7 +15,9 @@ const Hero = () => {
                         <small>Web Developer</small>
                         <div className="py-3 skill-icon">
                             <div className="single-skill-icon">
-                                <AiFillGithub />
+                                <a href="https://github.com/Joydip-Paul" target="_blank" className="text-white">
+                                    <AiFillGithub />
+                                </a>
                             </div>
                             <div className="single-skill-icon">
                                 <AiFillFacebook />

@@ -10,8 +10,9 @@
 
 :root {
   --white: #ffffff;
-  --theme-color-x: #171717;
-  --theme-black: #000000;
+  /* --theme-color-x: #171717; */
+  --theme-color-x: #262626;
+  /* --theme-black: #000000; */
   --theme-black: #1d1d1d;
   --theme-color-y: #53C2EE;
 }
@@ -39,6 +40,10 @@
 
 .text-50{
   font-size: 50px;
+}
+
+.text-40{
+  font-size: 40px;
 }
 
 .text-12{

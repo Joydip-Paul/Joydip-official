@@ -1,16 +1,28 @@
 import React from 'react';
+import ProjectCard from './ProjectCard';
+import Footer from './../Footer/Footer';
 
 const Projects = () => {
-    const st = {
-        marginTop: "100px",
-        padding: "100px",
-        textAlign: "center",
-        color: "white",
-    }
     return (
-        <div className="" style={st}>
-            <h1>This is Project Page</h1>
-        </div>
+        <section>
+            <div className="Projects-area pt-5 pb-5">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-4">
+                            <ProjectCard />
+                        </div>
+                        <div className="col-md-4">
+                            <ProjectCard />
+                        </div>
+                        <div className="col-md-4">
+                            <ProjectCard />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <Footer />
+        </section>
     );
 };
 

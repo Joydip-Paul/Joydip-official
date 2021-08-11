@@ -1,0 +1,9 @@
+.contact-now{
+  background-color: var(--theme-black);
+}
+
+.contact-now-inner{
+  background-color: var(--theme-color-x);
+  padding: 60px;
+  border-radius: 10px;
+}
