@@ -14,3 +14,17 @@
 .Projects-area{
     background-color: var(--theme-black);
 }
+
+.single-card{
+    transition: 1s;
+    padding: 2rem;
+    background-color: #2B2B35;
+    border: 1px solid #2B2B35;
+}
+
+.single-card:hover{
+    border: 1px solid #fff;
+}
+
+
+

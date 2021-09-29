@@ -10,7 +10,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="Joydip">
+    <div className="Joy">
+      <div className="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
       <Router>
         <Header />
         {/* <Navbar /> */}

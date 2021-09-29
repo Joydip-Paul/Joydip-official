@@ -1,12 +1,31 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 import { NavLink } from 'react-router-dom';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 const Header = () => {
     const [showNav, setShowNav] = useState(false);
+
+    const [scrolled, setScrolled] = useState(false);
+    const handleScroll = () => {
+        const offset = window.scrollY;
+        if (offset > 100) {
+            setScrolled(true);
+        } else {
+            setScrolled(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+    });
+    let navbarClasses = ["header-area", ""];
+    if (scrolled) {
+        navbarClasses.push("scrolled");
+    }
+
     return (
-        <nav>
+        <nav className={navbarClasses.join(" ")}>
             <div className="logo">
                 <a href="#" className="position-absolute logo text-white">Joydip</a>
             </div>

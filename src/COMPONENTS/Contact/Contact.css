@@ -7,3 +7,65 @@
   padding: 60px;
   border-radius: 10px;
 }
+
+.contact-area{
+  background-color: var(--theme-black);
+}
+
+.single-contact{
+  background: #2B2B35;
+  margin: 1.5rem 0;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.single-contact a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 1rem;
+}
+
+.single-contact a:hover{
+  color: #53C2EE;
+}
+
+.single-contact span{
+  background-color: #575769;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 5px;
+}
+
+.input-field{
+  margin: 1.5rem 0;
+}
+
+.input-field input, .input-field textarea{
+  background-color: #2B2B35;
+  outline: none;
+  border: none;
+  padding: 1rem;
+}
+
+.input-field input:focus, .input-field textarea:focus{
+  background-color: #32323b;
+  outline: none;
+  border: none;
+}
+
+.input-field textarea{
+  padding: 1.5rem 1rem;
+}
+
+.formBtn{
+  background-color: #2B2B35;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+}

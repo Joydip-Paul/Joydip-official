@@ -2,6 +2,7 @@ import React from 'react';
 import './Hero.css';
 import { AiFillGithub, AiFillFacebook, AiFillInstagram, AiFillLinkedin, AiFillTwitterSquare, AiFillSkype } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
+// import Fade from 'react-reveal/Fade';
 
 const Hero = () => {
     return (
@@ -9,9 +10,11 @@ const Hero = () => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="hero-content text-center">
-                        <h1 className="hero-heading" contentEditable="true">
-                            Joydip Paul
-                        </h1>
+                        {/* <Fade bottom> */}
+                            <h1 className="hero-heading" contentEditable="true">
+                                Joydip Paul
+                            </h1>
+                        {/* </Fade> */}
                         <small>Web Developer</small>
                         <div className="py-3 skill-icon">
                             <div className="single-skill-icon">
