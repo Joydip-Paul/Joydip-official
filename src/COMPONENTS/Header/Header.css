@@ -5,12 +5,8 @@
   padding: 1rem 0;
   transition: all 0.6s ease-in;
   z-index: 999;
+  position: relative;
 }
-
-/* .nav-menu-area {
-  width: 100%;
-  margin: 0 3rem;
-} */
 
 .scrolled {
   width: 100%;
@@ -20,16 +16,6 @@
   padding: 1rem 0;
   border-bottom: .5px solid #53C2EE;
 }
-
-/* nav{
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 0;
-    background-color: var(--theme-black);
-} */
 
 .logo a{
     left: 2rem;
@@ -175,5 +161,24 @@ nav{
 }
 .hide-item{
     transform: translateY(calc(-100% - 1rem));
+}
+
+.header-area {
+  width: 100%;
+  max-width: 100%;
+  background: #1C1C26;
+  padding: 1rem 0;
+  transition: all 0.6s ease-in;
+  z-index: 999;
+}
+
+.scrolled {
+  width: 100%;
+  height: 4.5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem 0;
+  border-bottom: none;
 }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import ProjectCard from './ProjectCard';
 import './Projects.css';
 import p0 from '../../img/p0.png';
+import Fade from 'react-reveal/Fade';
 
 const project = [
     { img: p0, title: "Flurix", description: "Flurix is a Multipurpose  Website. You can use this website for your company or any kind of business. ", Language: "HTML, CSS, BOOTSTRAP,JAVASCRIPT,JQUERY", Github: "https://github.com/Joydip-Paul/Flurix", preview: "https://joydip-paul.github.io/Flurix/index.html", id: 1 },
@@ -24,17 +25,19 @@ const ProjectsHome = () => {
                             project.map((item) => (
                                 <div className="col-md-5">
                                     <div className="card-container d-flex justify-content-center">
-                                        <div className="single-card">
-                                            <img src={p0} />
-                                            <div className="project-details text-white">
-                                                <h2>{item.title}</h2>
-                                                <small className="theme-color"><span className="fw-bold text-white">Language Used :</span> {item.Language}</small>
-                                                <p className="text-color">{item.description}</p>
+                                        <Fade bottom>
+                                            <div className="single-card">
+                                                <img src={p0} />
+                                                <div className="project-details text-white">
+                                                    <h2>{item.title}</h2>
+                                                    <small className="theme-color"><span className="fw-bold text-white">Language Used :</span> {item.Language}</small>
+                                                    <p className="text-color">{item.description}</p>
 
-                                                <a href={item.Github} className="my-btn text-decoration-none" target="_blank">Github Link</a>
-                                                <a href={item.preview} className="my-btn mx-2 text-decoration-none" id="second-btn" target="_blank">Preview</a>
+                                                    <a href={item.Github} className="my-btn text-decoration-none" target="_blank">Github Link</a>
+                                                    <a href={item.preview} className="my-btn mx-2 text-decoration-none" id="second-btn" target="_blank">Preview</a>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Fade>
                                     </div>
                                 </div>
                             ))

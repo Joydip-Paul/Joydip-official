@@ -2,6 +2,8 @@ import React from 'react';
 // import ProjectCard from './ProjectCard';
 import Footer from './../Footer/Footer';
 import p0 from '../../img/p0.png';
+import Fade from 'react-reveal/Fade';
+import Flash from 'react-reveal/Flash';
 
 const project = [
     { img: p0, title: "Flurix", description: "Flurix is a Multipurpose  Website. You can use this website for your company or any kind of business. ", Language: "HTML, CSS, BOOTSTRAP,JAVASCRIPT,JQUERY", Github: "https://github.com/Joydip-Paul/Flurix", preview: "https://joydip-paul.github.io/Flurix/index.html", id: 1 },
@@ -22,26 +24,30 @@ const Projects = () => {
         <section>
             <div className="Projects-area pt-5 pb-5">
                 <div className="container">
-                    <h2 className="text-white text-center fw-bold"> PROJECTS </h2>
+                    <Flash>
+                        <h2 className="text-white text-center fw-bold"> PROJECTS </h2>
+                    </Flash>
                     <div className="row">
 
                         {
                             project.map((item) => (
                                 <div className="col-md-4">
                                     <div className="card-container d-flex justify-content-center">
-                                        <div className="single-card">
-                                            <img src={p0} />
-                                            <div className="project-details text-white">
-                                                <h2>{item.title}</h2>
-                                                <small className="theme-color"><span className="fw-bold text-white">Language Used :</span> {item.Language}</small>
-                                                <p className="text-color">{item.description}</p>
+                                        <Fade bottom>
+                                            <div className="single-card">
+                                                <img src={p0} />
+                                                <div className="project-details text-white">
+                                                    <h2>{item.title}</h2>
+                                                    <small className="theme-color"><span className="fw-bold text-white">Language Used :</span> {item.Language}</small>
+                                                    <p className="text-color">{item.description}</p>
 
-                                                <a href={item.Github} className="my-btn text-decoration-none" target="_blank">Github Link</a>
-                                                <a href={item.preview} className="my-btn mx-2 text-decoration-none" id="second-btn" target="_blank">Preview</a>
-                                                {/* <button className="my-btn">Github Link</button> */}
-                                                {/* <button className="my-btn mx-2" id="second-btn">Preview</button> */}
+                                                    <a href={item.Github} className="my-btn text-decoration-none" target="_blank">Github Link</a>
+                                                    <a href={item.preview} className="my-btn mx-2 text-decoration-none" id="second-btn" target="_blank">Preview</a>
+                                                    {/* <button className="my-btn">Github Link</button> */}
+                                                    {/* <button className="my-btn mx-2" id="second-btn">Preview</button> */}
+                                                </div>
                                             </div>
-                                        </div>
+                                        </Fade>
                                     </div>
                                 </div>
                             ))

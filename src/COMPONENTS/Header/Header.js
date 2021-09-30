@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './Header.css';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { MdClose, MdMenu } from 'react-icons/md';
 
 const Header = () => {
@@ -27,7 +27,9 @@ const Header = () => {
     return (
         <nav className={navbarClasses.join(" ")}>
             <div className="logo">
-                <a href="#" className="position-absolute logo text-white">Joydip</a>
+                <Link to="/">
+                    <a href="#" className="position-absolute logo text-white">Joydip</a>
+                </Link>
             </div>
             <div className="nav-area">
                 <div className="hamburger_menu"

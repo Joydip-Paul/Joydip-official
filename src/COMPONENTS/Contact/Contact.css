@@ -1,12 +1,15 @@
 .contact-now{
   background-color: var(--theme-black);
+  z-index: 1 !important;
 }
 
 .contact-now-inner{
   background-color: var(--theme-color-x);
   padding: 60px;
   border-radius: 10px;
+  z-index: 100 !important;
 }
+
 
 .contact-area{
   background-color: var(--theme-black);

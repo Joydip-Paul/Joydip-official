@@ -37,6 +37,10 @@ body{
     filter: grayscale(100%);
 }
 
+.me img:hover{
+    animation: flash 1.5s infinite;
+}
+
 .home-about{
     background-color: var(--theme-black);
     padding: 100px 0;
