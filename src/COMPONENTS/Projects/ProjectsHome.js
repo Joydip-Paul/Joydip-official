@@ -1,13 +1,13 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
 import './Projects.css';
-import p0 from '../../img/p0.png';
+import projectBanner from '../../img/projectBanner.png';
 import Fade from 'react-reveal/Fade';
 
 const project = [
-    { img: p0, title: "Flurix", description: "Flurix is a Multipurpose  Website. You can use this website for your company or any kind of business. ", Language: "HTML, CSS, BOOTSTRAP,JAVASCRIPT,JQUERY", Github: "https://github.com/Joydip-Paul/Flurix", preview: "https://joydip-paul.github.io/Flurix/index.html", id: 1 },
+    {title: "Flurix", description: "Flurix is a Multipurpose  Website. You can use this website for your company or any kind of business. ", Language: "HTML, CSS, BOOTSTRAP,JAVASCRIPT,JQUERY", Github: "https://github.com/Joydip-Paul/Flurix", preview: "https://joydip-paul.github.io/Flurix/index.html", id: 1},
 
-    { img: p0, title: "Gift Point", description: "Gift Point is a MERNSTACK E-commerce Website. You can use this website for your company. ", Language: "REACT-JS, CSS, BOOTSTRAP,MONGODB,EXPRESS-JS", Github: "https://github.com/Joydip-Paul/Gift-Point", preview: "https://gift-point.netlify.app/", id: 2 },
+    {title: "Gift Point", description: "Gift Point is a MERNSTACK E-commerce Website. You can use this website for your company. ", Language: "REACT-JS, CSS, BOOTSTRAP,MONGODB,EXPRESS-JS", Github: "https://github.com/Joydip-Paul/Gift-Point", preview: "https://gift-point.netlify.app/", id: 2},
 ]
 
 
@@ -23,11 +23,14 @@ const ProjectsHome = () => {
                     <div className="row d-flex justify-content-center">
                         {
                             project.map((item) => (
-                                <div className="col-md-5">
+                                <div className="col-xl-5 col-md-6">
                                     <div className="card-container d-flex justify-content-center">
                                         <Fade bottom>
                                             <div className="single-card">
-                                                <img src={p0} />
+                                                <div className="projectName">
+                                                    <h4>{item.title}</h4>
+                                                    <img src={projectBanner} className="" />
+                                                </div>
                                                 <div className="project-details text-white">
                                                     <h2>{item.title}</h2>
                                                     <small className="theme-color"><span className="fw-bold text-white">Language Used :</span> {item.Language}</small>

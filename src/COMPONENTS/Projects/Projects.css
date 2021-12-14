@@ -26,5 +26,19 @@
     border: 1px solid #fff;
 }
 
+.projectName img{
+    position: relative;
+    width: 100%;
+    /* margin: 10px 0; */
+}
 
-
+.projectName h4{
+    position: absolute;
+    color: #ffffff;
+    z-index: 1000;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
