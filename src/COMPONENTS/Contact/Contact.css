@@ -72,6 +72,13 @@
   border-radius: 5px;
 }
 
+.success-card {
+  background-color: #32323b;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px){
   .single-contact a{
   font-size: 16px;

@@ -3,10 +3,16 @@ import './Contact.css';
 import Footer from './../Footer/Footer';
 import { AiFillMessage } from 'react-icons/ai';
 import { FaAddressCard } from 'react-icons/fa';
+import { useForm, ValidationError } from '@formspree/react';
+import { MdCall } from 'react-icons/md';
 
-import { MdCall} from 'react-icons/md';
 
 const Contact = () => {
+    const [state, handleSubmit] = useForm("mqknkyza");
+    if (state.succeeded) {
+        alert("success");
+        return <div className="text-center success-card mt-5 px-4 text-white pb-5 pt-5">Thanks for your inquiry. Wish you all the best. </div>;
+    }
     return (
         <section className="contact-area">
             <div className="text-white text-center pt-5">
@@ -31,22 +37,37 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <form>
+                        <form onSubmit={handleSubmit}>
                             <div class="input-field">
                                 {/* <label class="form-label text-white">Your Name</label> */}
-                                <input type="text" placeholder = "Enter Name" className = "form-control" />
+                                <input type="text" placeholder="Enter Name" name="username" className="form-control" required="required" />
+                                <ValidationError
+                                    prefix="Username"
+                                    field="username"
+                                    errors={state.errors}
+                                />
                             </div>
 
                             <div class="input-field">
                                 {/* <label class="form-label text-white">Your Email</label> */}
-                                <input type="email" placeholder="Enter Email" className="form-control" />
+                                <input type="email" name="email" placeholder="Enter Email" className="form-control" required="required" />
+                                <ValidationError
+                                    prefix="Email"
+                                    field="email"
+                                    errors={state.errors}
+                                />
                             </div>
 
                             <div class="input-field">
                                 {/* <label class="form-label text-white">Your Message</label> */}
-                                <textarea type="text" placeholder="Enter Message" className="form-control" rows = "3" cols = "5" />
+                                <textarea type="text" placeholder="Enter Message" className="form-control text-white" name="message" rows="3" cols="5" required="required" />
+                                <ValidationError
+                                    prefix="Message"
+                                    field="message"
+                                    errors={state.errors}
+                                />
                             </div>
-                           
+
                             <button type="submit" class="formBtn">Submit</button>
                         </form>
                     </div>
