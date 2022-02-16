@@ -5,9 +5,14 @@
 }
 
 .footer-content{
-    clip-path: polygon(49% 17%, 96% 35%, 100% 68%, 100% 100%, 68% 100%, 32% 100%, 0 100%, 0 67%, 4% 33%);
+    /* clip-path: polygon(49% 17%, 96% 35%, 100% 68%, 100% 100%, 68% 100%, 32% 100%, 0 100%, 0 67%, 4% 33%); */
+    clip-path: polygon(0 31%, 14% 31%, 14% 14%, 85% 14%, 85% 31%, 100% 31%, 100% 85%, 100% 100%, 85% 100%, 15% 100%, 0 100%, 0% 85%);
     background-color: var(--theme-color-x);
     padding: 100px 0 10px 0;
+}
+
+.footer-content p a{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-contact{

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import Fade from 'react-reveal/Fade';
+import { Link } from 'react-router-dom';
 
 const ContactNow = () => {
     return (
@@ -10,7 +11,7 @@ const ContactNow = () => {
                     <h6>have a project in mind</h6>
                     <h2 className="text-40 fw-bold py-2">Let me help you</h2>
                     {/* <a href = "#!" className="my-btn">Contact Now</a> */}
-                    <button className="my-btn">Contact Now</button>
+                    <Link to = "/contact"><button className="my-btn">Contact Now</button></Link>
                 </div>
             </Fade>
         </section>

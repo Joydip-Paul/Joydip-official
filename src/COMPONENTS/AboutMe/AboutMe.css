@@ -34,11 +34,15 @@ body{
     position: relative;
     width: 60%;
     float: right;
-    filter: grayscale(100%);
+    z-index: 1;
+    box-shadow:
+    -50px -50px 0 -45px #fff,
+    50px 50px 0 -45px #fff;
 }
 
 .me img:hover{
     animation: flash 1.5s infinite;
+     filter: grayscale(100%);
 }
 
 .home-about{
@@ -136,15 +140,7 @@ body{
 .row section p{
   margin: 10px 0 17px 0;
 }
-/* .row section .bottom a{
-  text-decoration: none;
-  background: #ff7979;
-  color: #fff;
-  padding: 7px 15px;
-  border-radius: 5px;
-  font-weight: 400;
-  transition: all 0.3s ease;
-} */
+
 .row section .bottom a:hover{
   transform: scale(0.97);
 }

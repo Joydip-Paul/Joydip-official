@@ -15,16 +15,18 @@
 }
 
 .single-contact{
+  display: flex;
+  align-items: center;
   background: #2B2B35;
   margin: 1.5rem 0;
-  padding: 2rem;
+  padding: 1.4rem;
   border-radius: 5px;
 }
 
 .single-contact a{
   text-decoration: none;
   color: #fff;
-  font-size: 25px;
+  font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 1rem;
 }
@@ -37,7 +39,7 @@
   background-color: #575769;
   color: #fff;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-radius: 5px;
 }
 
@@ -79,8 +81,12 @@
   text-align: center;
 }
 
-@media screen and (min-width: 768px){
+@media(max-width: 992px){
+  .single-contact span{
+  padding: .5rem;
+}
+
   .single-contact a{
-  font-size: 16px;
+  font-size: 1rem !important;
 }
 }

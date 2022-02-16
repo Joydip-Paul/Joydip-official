@@ -8,7 +8,7 @@ import projectBanner from '../../img/projectBanner.png';
 const project = [
     { title: "Flurix", description: "Flurix is a Multipurpose  Website. You can use this website for your company or any kind of business. ", Language: "HTML, CSS, BOOTSTRAP,JAVASCRIPT,JQUERY", Github: "https://github.com/Joydip-Paul/Flurix", preview: "https://joydip-paul.github.io/Flurix/index.html", id: 1 },
     
-    { title: "AlgoBind",  description: "Algobind is a Portfolio Website. You can use this website for your personal use and display your work. ", Language: "REACT-JS, CSS, BOOTSTRAP", Github: "https://github.com/Joydip-Paul/AlgoBind", preview: "https://frosty-jennings-758447.netlify.app/", id: 2 },
+    { title: "AlgoBind", description: "Algobind is a Portfolio Website. You can use this website for your personal use and display your work. ", Language: "REACT-JS, CSS, BOOTSTRAP", Github: "https://github.com/Joydip-Paul/AlgoBind", preview: "https://frosty-jennings-758447.netlify.app/", id: 2 },
 
     {title: "ExpoHut", description: "ExpoHut is a Multipurpose  Website. You can use this website for your company or any kind of business. ", Language: "HTML, CSS, BOOTSTRAP,JAVASCRIPT", Github: "https://github.com/Joydip-Paul/expohut", preview: "https://joydip-paul.github.io/expohut/ExpoHut-project/Project/Index.html", id: 3 },
 

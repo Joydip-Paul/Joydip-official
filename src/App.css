@@ -55,11 +55,6 @@ body,html{
   }
 }
 
-/* .container{
-  width: 1140px;
-  margin: 0 auto;
-} */
-
 .pt-100{
   padding-top: 100px;
 }
@@ -131,7 +126,26 @@ body,html{
   color: var(--theme-color-x);
 }
 
+.goTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  color: #fff;
+  background: none;
+  border: none;
+}
 
+.goTop:focus{
+  outline: none;
+}
+
+/* 
 
 .Joy{
   height: 100%;
@@ -215,4 +229,4 @@ body,html{
   100% {
     top: 110%;
   }
-}
+} */

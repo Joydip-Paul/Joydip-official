@@ -25,11 +25,11 @@ const Contact = () => {
                     <div className="col-md-6">
                         <div className="single-contact">
                             <span><MdCall /></span>
-                            <a href="#!">+88 01759696957</a>
+                            <a href="tel:+8801759696957">+88 01759696957</a>
                         </div>
                         <div className="single-contact">
                             <span><AiFillMessage /></span>
-                            <a href="#!">joydippaul72@gmail.com</a>
+                            <a href="mailto: joydippaul72@gmail.com">joydippaul72@gmail.com</a>
                         </div>
                         <div className="single-contact">
                             <span><FaAddressCard /></span>
@@ -39,8 +39,7 @@ const Contact = () => {
                     <div className="col-md-6">
                         <form onSubmit={handleSubmit}>
                             <div class="input-field">
-                                {/* <label class="form-label text-white">Your Name</label> */}
-                                <input type="text" placeholder="Enter Name" name="username" className="form-control" required="required" />
+                                <input type="text" placeholder="Enter Name" name="username" className="form-control shadow-none" required="required" />
                                 <ValidationError
                                     prefix="Username"
                                     field="username"
@@ -49,8 +48,7 @@ const Contact = () => {
                             </div>
 
                             <div class="input-field">
-                                {/* <label class="form-label text-white">Your Email</label> */}
-                                <input type="email" name="email" placeholder="Enter Email" className="form-control" required="required" />
+                                <input type="email" name="email" placeholder="Enter Email" className="form-control shadow-none" required="required" />
                                 <ValidationError
                                     prefix="Email"
                                     field="email"
@@ -59,8 +57,7 @@ const Contact = () => {
                             </div>
 
                             <div class="input-field">
-                                {/* <label class="form-label text-white">Your Message</label> */}
-                                <textarea type="text" placeholder="Enter Message" className="form-control text-white" name="message" rows="3" cols="5" required="required" />
+                                <textarea type="text" placeholder="Enter Message" className="form-control text-white shadow-none" name="message" rows="3" cols="5" required="required" />
                                 <ValidationError
                                     prefix="Message"
                                     field="message"
