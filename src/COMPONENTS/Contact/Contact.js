@@ -25,11 +25,12 @@ const Contact = () => {
                     <div className="col-md-6">
                         <div className="single-contact">
                             <span><MdCall /></span>
-                            <a href="tel:+8801759696957">+88 01759696957</a>
+                            <a href="tel:+8801882563044">+88018-82563044</a>
                         </div>
                         <div className="single-contact">
                             <span><AiFillMessage /></span>
-                            <a href="mailto: joydippaul72@gmail.com">joydippaul72@gmail.com</a>
+                            <a href="mailto: joydippaul72@gmail.com">provakor.konik@gmail.com
+                            </a>
                         </div>
                         <div className="single-contact">
                             <span><FaAddressCard /></span>

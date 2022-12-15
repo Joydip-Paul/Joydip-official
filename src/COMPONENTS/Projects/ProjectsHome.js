@@ -5,16 +5,16 @@ import projectBanner from '../../img/projectBanner.png';
 import Fade from 'react-reveal/Fade';
 
 const project = [
-    {title: "Flurix", description: "Flurix is a Multipurpose  Website. You can use this website for your company or any kind of business. ", Language: "HTML, CSS, BOOTSTRAP,JAVASCRIPT,JQUERY", Github: "https://github.com/Joydip-Paul/Flurix", preview: "https://joydip-paul.github.io/Flurix/index.html", id: 1},
+    { title: "Flurix", description: "Flurix is a Multipurpose  Website. You can use this website for your company or any kind of business. ", Language: "HTML, CSS, BOOTSTRAP,JAVASCRIPT,JQUERY", Github: "https://github.com/Joydip-Paul/Flurix", preview: "https://joydip-paul.github.io/Flurix/index.html", id: 1 },
 
-    {title: "Gift Point", description: "Gift Point is a MERNSTACK E-commerce Website. You can use this website for your company. ", Language: "REACT-JS, CSS, BOOTSTRAP,MONGODB,EXPRESS-JS", Github: "https://github.com/Joydip-Paul/Gift-Point", preview: "https://gift-point.netlify.app/", id: 2},
+    { title: "Gift Point", description: "Gift Point is a MERNSTACK E-commerce Website. You can use this website for your company. ", Language: "REACT-JS, CSS, BOOTSTRAP,MONGODB,EXPRESS-JS", Github: "https://github.com/Joydip-Paul/Gift-Point", preview: "https://gift-point.netlify.app/", id: 2 },
 ]
 
 
 const ProjectsHome = () => {
     return (
         <section>
-            <div className="project-area pt-5 pb-5">
+            {/* <div className="project-area pt-5 pb-5">
                 <div className="text-center text-white">
                     <span>some of my recent works</span>
                     <h1 className="fw-bold text-uppercase">Projects</h1>
@@ -47,7 +47,7 @@ const ProjectsHome = () => {
                         }
                     </div>
                 </div>
-            </div>
+            </div> */}
         </section>
     );
 };

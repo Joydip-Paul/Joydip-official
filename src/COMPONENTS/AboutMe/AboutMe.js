@@ -16,19 +16,18 @@ const AboutMe = () => {
                             <Fade top>
                                 <h2 className="py-2 text-50">ABOUT ME</h2>
                             </Fade>
-                            <p>This is Joydip Paul.A passionate Frontend Developer.
-                                I believe that the main reason is that front-end development satisfies my need for creativity.
+                            <p className='pb-4'>I want to contribute more with creative
+                                ideas to solve the potential issues.
+                                Dealing with any complex problem and
+                                solving it afterward makes me feel
+                                relaxed, confident and motivates me to
+                                accept new challenging tasks. I am very
+                                passionate about learning new things,
+                                develop ideas to become an expert in my
+                                field of interest.
                             </p>
-                            <p>
-                                I am from Sylhet, Bangladesh.A place of beauty and nature.Since my childhood, i love art and painting.I always try to design stuff with my unique point of view.I also love to create things that can be usefull to others.
-                            </p>
-                            <p>
-                                I started coding from university life.Coding is also an art for me.I love it and now I have the opportunity to design along with the coding.I find it really interesting and I enjoyed the process a lot.
-                            </p>
-                            <p>
-                                My vision is to make the world a better place.Now almost everything is becoming better than ever.It is time for us to create more good stuff that helps the world to become a better place.
-                            </p>
-                            <button className="my-btn mx-2">Download CV</button>
+                            <a className="my-btn mx-2" href="https://drive.google.com/file/d/1eqFD0RLECFrVxktMWla_Qab6d_PhVx-K/view?fbclid=IwAR1BJzWnEvqUz4IJAxqGTPEgo2qd7p9EXJ2mbLF0wG3EWB9ciK5bAjk-yOE" target="_blank">Download CV</a>
+                            {/* <button className="my-btn mx-2">Download CV</button> */}
                         </div>
                     </div>
 

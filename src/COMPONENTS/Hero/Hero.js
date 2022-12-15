@@ -11,52 +11,52 @@ const Hero = () => {
                 <div className="row justify-content-center">
                     <div className="hero-content text-center">
                         <h1 className="hero-heading" contentEditable="true">
-                            Joydip Paul
+                            Provakor Das
                         </h1>
                         <Fade bottom>
-                            <small>Web Developer</small>
+                            <small>Software Engineer</small>
                         </Fade>
                         <div className="py-3 skill-icon">
                             <div className="single-skill-icon">
-                                <a href="https://github.com/Joydip-Paul" target="_blank" className="text-white">
+                                <a href="https://github.com/fakibuzzkonik" target="_blank" className="text-white">
                                     <AiFillGithub />
                                 </a>
                             </div>
-                            <div className="single-skill-icon">
+                            {/* <div className="single-skill-icon">
                                 <a href="https://www.facebook.com/joydippaul72" target="_blank" className="text-white">
                                     <AiFillFacebook />
                                 </a>
                                 
-                            </div>
-                            <div className="single-skill-icon">
+                            </div> */}
+                            {/* <div className="single-skill-icon">
                                 <a href="https://www.instagram.com/joydip_jishu/" target="_blank" className="text-white">
                                     <AiFillInstagram />
                                 </a>
                                 
-                            </div>
+                            </div> */}
                             <div className="single-skill-icon">
-                                <a href="https://www.linkedin.com/in/joydip-paul-90b447190/" target="_blank" className="text-white">
+                                <a href="https://www.linkedin.com/in/provakorkonik/" target="_blank" className="text-white">
                                     <AiFillLinkedin />
                                 </a>
-                                
+
                             </div>
-                            <div className="single-skill-icon">
+                            {/* <div className="single-skill-icon">
                                 <a href="https://twitter.com/Joydippaul9" target="_blank" className="text-white">
                                     <AiFillTwitterSquare />
                                 </a>
                                 
-                            </div>
-                            <div className="single-skill-icon">
+                            </div> */}
+                            {/* <div className="single-skill-icon">
                                 <a href="https://www.behance.net/Joydippaul018e" target="_blank" className="text-white">
                                     <AiFillBehanceSquare />
                                 </a>
                                 
-                            </div>
+                            </div> */}
                         </div>
                         {/* <button className="theme-btn">Download CV</button> */}
-                        <Link to="/projects">
+                        {/* <Link to="/projects">
                             <button className="my-btn">see my works</button>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

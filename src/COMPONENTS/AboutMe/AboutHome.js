@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutMe.css';
 import Fade from 'react-reveal/Fade';
-import me from '../../img/JoydipPaul.jpg';
+import me from '../../img/konik2.png';
 import { Link } from 'react-router-dom';
 
 
@@ -14,9 +14,18 @@ const AboutHome = () => {
                         <div className="col-md-6 text-white">
                             <small>Let's introduce myself</small>
                             <h2 className="py-2">ABOUT ME</h2>
-                            <p className="text-justify">Hello, This is Joydip Paul from Bangladesh. I have pursued a B.Sc. in computer science. At this moment in time, I am in an internship at Semiclone as a Front-end developer. In my leisure period usually, I do painting and sketching. I never give up until I get something right and, I am a lifetime learner.</p>
-                            <Link to = "/projects"><button className="my-btn">Works</button></Link>
-                            <Link to = "/about"><button className="my-btn mx-2" id="second-btn">Read More</button></Link>
+                            <p className="text-justify">I want to contribute more with creative
+                                ideas to solve the potential issues.
+                                Dealing with any complex problem and
+                                solving it afterward makes me feel
+                                relaxed, confident and motivates me to
+                                accept new challenging tasks. I am very
+                                passionate about learning new things,
+                                develop ideas to become an expert in my
+                                field of interest.
+                            </p>
+                            {/* <Link to="/projects"><button className="my-btn">Works</button></Link> */}
+                            <Link to="/about"><button className="my-btn" id="second-btn">Read More</button></Link>
                         </div>
                     </Fade>
                     <Fade right>

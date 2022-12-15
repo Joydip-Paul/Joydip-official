@@ -19,10 +19,10 @@ const Timeline = () => {
                         <FaUniversity />
                     </div>
                     <h2 class="title fw-bold pb-4">EDUCATION</h2>
-
+                    <h4 className="text-uppercase">University - <span className="text-14 text-capitalize">Shahjalal University of Science and Technology (Night-Shift) (2022 - Present)</span></h4>
                     <h4 className="text-uppercase">University - <span className="text-14 text-capitalize">Leading University (2017 - 2020)</span></h4>
                     <h4 className="text-uppercase">College - <span className="text-14 text-capitalize">Sylhet Govt. College (2014-2016)</span></h4>
-                    <h4 className="text-uppercase">School - <span className="text-14 text-capitalize">DCP High School (2010-2014)</span></h4>
+                    {/* <h4 className="text-uppercase">School - <span className="text-14 text-capitalize">DCP High School (2010-2014)</span></h4> */}
                 </section>
             </div>
             <div class="row row-2">
@@ -32,12 +32,32 @@ const Timeline = () => {
                     </div>
                     <div>
                         <h2 class="title fw-bold pb-4">MY SKILLS</h2>
-                        <h4 className="text-uppercase">Frontend - <span className="text-14 text-capitalize">Html, css, javascript, react</span></h4>
-                        <h4 className="text-uppercase">Backend - <span className="text-14 text-capitalize">Node, Mongodb, Express</span></h4>
-                        <h4 className="text-uppercase">Design - <span className="text-14 text-capitalize">Photoshop, Figma</span></h4>
+                        <h4>Android Development</h4>
+                        <ul>
+                            <li>Java, Android Fundamental</li>
+                            <li>MVVM Architecture, Clean Code</li>
+                            <li>Object Oriented Programming</li>
+                            <li>Sequence, Class, Case, ER Diagram</li>
+                            <li>Room Database, Firestore DB, SQLite, File Storage</li>
+                            <li>DataBinding, ViewBinding, XML Layout Design</li>
+                            <li>Dependency Injection (Dagger, Hilt)</li>
+                            <li>Firebase (Auth, Notification, Cloud, Analytics)</li>
+                            <li>Threads, Git and Github, Google Maps Ap</li>
+                            <li>Memory leak detection</li>
+                            <li>Well structure and Readable code</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Graphics Design</h4>
+                        <ul>
+                            <li>Photoshop</li>
+                            <li>Illustrator</li>
+                            <li>Figma</li>
+                        </ul>
                     </div>
                 </section>
             </div>
+
             <div class="row row-1">
                 <section>
                     <div className="icon">
@@ -45,7 +65,18 @@ const Timeline = () => {
                     </div>
                     <div>
                         <h2 class="title fw-bold pb-4">EXPERIENCE</h2>
-                        <h4 className="text-uppercase">Semiclone - <span className="text-14 text-capitalize">Frontend Developer (Internship)</span></h4>
+                        <div className='mb-3'>
+                            <h4 className="text-uppercase">Vexcave - <span className="text-14 text-capitalize">Software Engineer</span></h4>
+                            <p>Duration: February 2022 - Present</p>
+                        </div>
+                        <div className='mb-3'>
+                            <h4 className="text-uppercase">Biggorilla Apps - <span className="text-14 text-capitalize">Junior Software Engineer</span></h4>
+                            <p>Duration: September 2021 - January 2022</p>
+                        </div>
+                        <div className='mb-3'>
+                            <h4 className="text-uppercase">Appstic It - <span className="text-14 text-capitalize">Software Engineer</span></h4>
+                            <p>Duration: January 2018 - November 2018</p>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -54,9 +85,18 @@ const Timeline = () => {
                     <div className="icon">
                         <FaUniversity />
                     </div>
-                    <div>
-                        <h2 class="title fw-bold pb-4">COMMING SOON</h2>
-                        <h4 className="text-uppercase">Wating - <span className="text-14 text-capitalize">Please Wait For a While</span></h4>
+                    <h2 class="title fw-bold pb-4">Awards</h2>
+                    <div className='mb-3'>
+                        <h4 className="text-uppercase">LU TECH FEST 2021</h4>
+                        <p>Runner’s up on Hackathon</p>
+                    </div>
+                    <div className='mb-3'>
+                        <h4 className="text-uppercase">LU CSE Carnival 2019</h4>
+                        <p>Runner’s up on Hackathon</p>
+                    </div>
+                    <div className='mb-3'>
+                        <h4 className="text-uppercase">LU Intra University Tech Fest 2018</h4>
+                        <p>Champion on Competitive Programming</p>
                     </div>
                 </section>
             </div>
